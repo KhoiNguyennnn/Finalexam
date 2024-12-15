@@ -1,0 +1,72 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu toàn màn hình */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+h2 {
+    margin-bottom: 20px;
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+/* Navigation dọc (menu bên trái) */
+nav {
+    display: flex;
+    flex-direction: column; /* Hiển thị menu theo chiều dọc */
+    justify-content: flex-start; /* Căn từ phía trên cùng */
+    align-items: flex-start; /* Căn các mục về phía bên trái */
+    background: linear-gradient(to right, rgba(0, 31, 63, 1), rgba(0, 31, 63, 0)); /* Tạo gradient chuyển từ xanh navy sang trong suốt */
+    padding: 20px;
+    height: 100vh; /* Chiều cao toàn màn hình */
+    position: fixed; /* Cố định menu bên trái */
+    left: 0px; /* Nằm sát cạnh trái */
+    top: 0px; /* Nằm từ trên cùng */
+    width: 200px; /* Độ rộng menu */
+}
+nav a {
+    margin: 40px 0; /* Khoảng cách giữa các mục */
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px; /* Tăng kích thước chữ */
+    transition: transform 0.3s; /* Thêm hiệu ứng chuyển đổi mượt */
+}
+nav a:hover {
+    color: #fffffd;
+    transform: scale(1.2); /* Phóng to khi di chuột vào */
+}
+
+/* Main content */
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
