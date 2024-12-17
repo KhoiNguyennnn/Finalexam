@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background: url('https://i.imgur.com/cuy23em.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            min-height: 100vh;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            text-align: center;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 18%;
+            max-width: 200px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-info h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .card-info p {
+            color: #555;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Our Team</h1>
+        <div class="team-container">
+            <div class="card">
+                <img src="https://i.imgur.com/7FuaJoh.png" alt="Member 1">
+                <div class="card-info">
+                    <h2>Trần Đông Quân</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/1r4l8dS.png" alt="Member 2">
+                <div class="card-info">
+                    <h2>Nguyễn Khánh Hưng</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/7Y8Xkpg.png" alt="Member 3">
+                <div class="card-info">
+                    <h2>Nguyễn Tuấn Anh</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/6T0d97D.png" alt="Member 4">
+                <div class="card-info">
+                    <h2>Nguyễn Tuấn Khôi</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/ykHtvQl.png" alt="Member 5">
+                <div class="card-info">
+                    <h2>Huỳnh Nhật Bảo</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
